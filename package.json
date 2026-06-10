@@ -29,6 +29,7 @@
     "e2e": "turbo run e2e",
     "changeset": "changeset",
     "version-packages": "changeset version",
+    "publish:packages": "pnpm -r --filter './packages/**' publish --access public --no-git-checks",
     "db:up": "docker compose up -d",
     "db:down": "docker compose down"
   },

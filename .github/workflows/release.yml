@@ -48,17 +48,11 @@ jobs:
       - name: Build
         run: pnpm build --filter "./packages/*" --filter "./packages/adapters/*"
 
-      - name: Verify npm publish (dry run)
-        run: npm publish --dry-run --access public
-        working-directory: packages/core
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Create release PR or publish
         uses: changesets/action@v1
         with:
           version: pnpm version-packages
-          publish: pnpm changeset publish
+          publish: pnpm publish:packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
