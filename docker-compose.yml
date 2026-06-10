@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: datacanvas-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: datacanvas
+      POSTGRES_PASSWORD: datacanvas
+      POSTGRES_DB: datacanvas
+    ports:
+      # Host port 5433 to avoid clashing with a locally installed PostgreSQL.
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U datacanvas"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:

@@ -1,0 +1,350 @@
+/* DataCanvas default theme. Import once:  import "@datacanvas/react/styles.css";
+   Every rule is scoped to .dc-* classes and driven by CSS variables, so apps
+   can re-theme or replace this file entirely. */
+
+:root {
+  --dc-bg: #ffffff;
+  --dc-fg: #1c2433;
+  --dc-muted: #6b7486;
+  --dc-border: #e3e7ee;
+  --dc-accent: #2563eb;
+  --dc-accent-fg: #ffffff;
+  --dc-danger: #dc2626;
+  --dc-row-hover: #f4f6fa;
+  --dc-row-selected: #e8effd;
+  --dc-radius: 8px;
+  --dc-shadow: 0 10px 30px rgba(16, 24, 40, 0.12);
+}
+
+.dc-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--dc-fg);
+}
+
+.dc-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dc-screen-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 650;
+}
+
+.dc-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Grid */
+
+.dc-grid {
+  border: 1px solid var(--dc-border);
+  border-radius: var(--dc-radius);
+  background: var(--dc-bg);
+  overflow: hidden;
+}
+
+.dc-grid-scroll {
+  overflow-x: auto;
+}
+
+.dc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.dc-table th {
+  text-align: left;
+  padding: 0;
+  border-bottom: 1px solid var(--dc-border);
+  background: #f8fafc;
+  white-space: nowrap;
+}
+
+.dc-th-button {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--dc-muted);
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dc-th-button:hover {
+  color: var(--dc-fg);
+}
+
+.dc-sort-indicator {
+  font-size: 0.625rem;
+  color: var(--dc-accent);
+}
+
+.dc-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--dc-border);
+  vertical-align: middle;
+}
+
+.dc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dc-row-clickable {
+  cursor: pointer;
+}
+
+.dc-table tbody tr:hover {
+  background: var(--dc-row-hover);
+}
+
+.dc-row-selected,
+.dc-table tbody tr.dc-row-selected:hover {
+  background: var(--dc-row-selected);
+}
+
+.dc-td-actions,
+.dc-th-actions {
+  text-align: right;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.dc-empty {
+  text-align: center;
+  color: var(--dc-muted);
+  padding: 32px 14px !important;
+}
+
+.dc-muted {
+  color: var(--dc-muted);
+}
+
+.dc-number {
+  font-variant-numeric: tabular-nums;
+}
+
+.dc-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.dc-badge-yes {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.dc-badge-no {
+  background: #f1f5f9;
+  color: var(--dc-muted);
+}
+
+/* Pagination */
+
+.dc-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-top: 1px solid var(--dc-border);
+  background: #f8fafc;
+  font-size: 0.8125rem;
+}
+
+.dc-pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Buttons */
+
+.dc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border: 1px solid var(--dc-border);
+  border-radius: 6px;
+  background: var(--dc-bg);
+  color: var(--dc-fg);
+  font-size: 0.8125rem;
+  font-weight: 550;
+  cursor: pointer;
+  transition:
+    background 120ms ease,
+    border-color 120ms ease;
+}
+
+.dc-btn:hover:not(:disabled) {
+  background: var(--dc-row-hover);
+}
+
+.dc-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dc-btn-primary {
+  background: var(--dc-accent);
+  border-color: var(--dc-accent);
+  color: var(--dc-accent-fg);
+}
+
+.dc-btn-primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.dc-btn-ghost {
+  border-color: transparent;
+  background: transparent;
+  padding: 4px 8px;
+}
+
+.dc-btn-danger {
+  color: var(--dc-danger);
+}
+
+.dc-btn-danger-solid {
+  background: var(--dc-danger);
+  border-color: var(--dc-danger);
+}
+
+.dc-btn-danger-solid:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+/* Inputs */
+
+.dc-input {
+  padding: 7px 10px;
+  border: 1px solid var(--dc-border);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--dc-fg);
+  background: var(--dc-bg);
+  min-width: 0;
+}
+
+.dc-input:focus {
+  outline: 2px solid color-mix(in srgb, var(--dc-accent) 35%, transparent);
+  border-color: var(--dc-accent);
+}
+
+.dc-search {
+  width: 220px;
+}
+
+.dc-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--dc-accent);
+}
+
+/* Form */
+
+.dc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dc-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dc-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--dc-fg);
+}
+
+.dc-required {
+  color: var(--dc-danger);
+  margin-left: 3px;
+}
+
+.dc-field-error {
+  font-size: 0.75rem;
+  color: var(--dc-danger);
+}
+
+.dc-form-error {
+  padding: 10px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  background: #fef2f2;
+  color: var(--dc-danger);
+  font-size: 0.8125rem;
+}
+
+.dc-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.dc-confirm-text {
+  margin: 0 0 14px;
+  color: var(--dc-muted);
+}
+
+/* Modal */
+
+.dc-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 9vh 16px 16px;
+  z-index: 50;
+}
+
+.dc-modal {
+  background: var(--dc-bg);
+  border-radius: 12px;
+  box-shadow: var(--dc-shadow);
+  width: 100%;
+  max-width: 460px;
+  max-height: 84vh;
+  overflow-y: auto;
+}
+
+.dc-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--dc-border);
+}
+
+.dc-modal-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.dc-modal-body {
+  padding: 18px;
+}
