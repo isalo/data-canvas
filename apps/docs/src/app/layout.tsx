@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </Link>
           <nav>
             <Link href="/docs/getting-started">Docs</Link>
-            <a href="https://github.com/isalo/datacanvas">GitHub</a>
+            <a href="https://github.com/isalo/data-canvas">GitHub</a>
           </nav>
         </header>
         {children}

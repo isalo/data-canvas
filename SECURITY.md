@@ -10,7 +10,7 @@ DataCanvas is pre-1.0. Only the latest published version of each
 Please **do not** open a public issue for security problems.
 
 Instead, report vulnerabilities privately via
-[GitHub Security Advisories](https://github.com/isalo/datacanvas/security/advisories/new).
+[GitHub Security Advisories](https://github.com/isalo/data-canvas/security/advisories/new).
 
 You can expect:
 

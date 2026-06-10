@@ -6,7 +6,7 @@
   "author": "isalo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/isalo/datacanvas",
+    "url": "https://github.com/isalo/data-canvas",
     "directory": "packages/adapters/drizzle"
   },
   "type": "module",

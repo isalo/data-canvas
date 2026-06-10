@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/isalo/datacanvas/actions/workflows/ci.yml"><img src="https://github.com/isalo/datacanvas/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://github.com/isalo/data-canvas/actions/workflows/ci.yml"><img src="https://github.com/isalo/data-canvas/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/status-v0.1%20MVP-orange.svg" alt="Status" />
 </p>
@@ -155,8 +155,8 @@ Need custom UI? Drop a layer down: `useEntityList`, `useEntityMutations` and
 ## Local development
 
 ```bash
-git clone https://github.com/isalo/datacanvas.git
-cd datacanvas
+git clone https://github.com/isalo/data-canvas.git
+cd data-canvas
 pnpm install
 pnpm build      # build all packages
 pnpm dev        # demo on :3000, docs on :3001

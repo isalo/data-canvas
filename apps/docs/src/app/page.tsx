@@ -14,7 +14,7 @@ export default function LandingPage() {
           <Link className="btn btn-primary" href="/docs/getting-started">
             Get started
           </Link>
-          <a className="btn" href="https://github.com/isalo/datacanvas">
+          <a className="btn" href="https://github.com/isalo/data-canvas">
             View on GitHub
           </a>
         </div>

@@ -12,8 +12,8 @@ need to get a local environment running and land a change.
 ## Getting started
 
 ```bash
-git clone https://github.com/isalo/datacanvas.git
-cd datacanvas
+git clone https://github.com/isalo/data-canvas.git
+cd data-canvas
 pnpm install
 pnpm build        # builds all packages (the apps consume built output)
 pnpm dev          # starts demo (:3000) and docs (:3001) in watch mode
