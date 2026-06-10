@@ -3,6 +3,7 @@ name: Release
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 concurrency: release-${{ github.ref }}
 
@@ -28,6 +29,24 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
+          registry-url: https://registry.npmjs.org
+          scope: "@data-canvas"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Verify npm publish access
+        run: |
+          set -euo pipefail
+          echo "npm user: $(npm whoami)"
+          echo "Checking @data-canvas org access..."
+          if ! npm org ls data-canvas >/dev/null 2>&1; then
+            echo "::error::npm user cannot manage the @data-canvas org. Confirm you created org 'data-canvas' on npmjs.com and your npm user is an Owner. Then regenerate an Automation token and update the NPM_TOKEN secret."
+            exit 1
+          fi
+          echo "Org members:"
+          npm org ls data-canvas
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install
         run: pnpm install --frozen-lockfile
