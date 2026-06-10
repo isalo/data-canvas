@@ -1,4 +1,4 @@
-import { type FieldMeta } from "@datacanvas/core";
+import { type FieldMeta } from "@data-canvas/core";
 import { useLookupOptions } from "../hooks";
 
 export interface EntityLookupProps {

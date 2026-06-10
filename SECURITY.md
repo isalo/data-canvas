@@ -3,7 +3,7 @@
 ## Supported versions
 
 DataCanvas is pre-1.0. Only the latest published version of each
-`@datacanvas/*` package receives security fixes.
+`@data-canvas/*` package receives security fixes.
 
 ## Reporting a vulnerability
 

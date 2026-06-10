@@ -5,7 +5,7 @@ import {
   type EntityRow,
   type ListQuery,
   type ListResult,
-} from "@datacanvas/core";
+} from "@data-canvas/core";
 
 export interface MemoryAdapterOptions {
   /** Initial rows keyed by entity name, e.g. `{ countries: [...] }`. */

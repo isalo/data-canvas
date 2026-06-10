@@ -1,4 +1,4 @@
-import "@datacanvas/react/styles.css";
+import "@data-canvas/react/styles.css";
 import "./globals.css";
 
 import { type Metadata } from "next";

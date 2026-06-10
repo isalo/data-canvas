@@ -1,4 +1,4 @@
-/* DataCanvas default theme. Import once:  import "@datacanvas/react/styles.css";
+/* DataCanvas default theme. Import once:  import "@data-canvas/react/styles.css";
    Every rule is scoped to .dc-* classes and driven by CSS variables, so apps
    can re-theme or replace this file entirely. */
 

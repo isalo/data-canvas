@@ -1,6 +1,6 @@
 "use client";
 
-import { EntityScreen } from "@datacanvas/react";
+import { EntityScreen } from "@data-canvas/react";
 import { Country } from "@/lib/entities";
 
 export default function CountriesPage() {

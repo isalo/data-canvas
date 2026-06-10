@@ -1,5 +1,5 @@
 {
-  "name": "@datacanvas/adapter-drizzle",
+  "name": "@data-canvas/adapter-drizzle",
   "version": "0.1.0",
   "description": "Drizzle ORM / PostgreSQL adapter for DataCanvas.",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@datacanvas/core": "workspace:*"
+    "@data-canvas/core": "workspace:*"
   },
   "peerDependencies": {
     "drizzle-orm": ">=0.36.0"

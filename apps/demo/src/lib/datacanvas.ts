@@ -1,6 +1,6 @@
-import { drizzleAdapter } from "@datacanvas/adapter-drizzle";
-import { type DataAdapter } from "@datacanvas/core";
-import { createDataCanvas, createMemoryAdapter } from "@datacanvas/server";
+import { drizzleAdapter } from "@data-canvas/adapter-drizzle";
+import { type DataAdapter } from "@data-canvas/core";
+import { createDataCanvas, createMemoryAdapter } from "@data-canvas/server";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 import { allEntities } from "./entities";

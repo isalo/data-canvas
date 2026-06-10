@@ -1,4 +1,4 @@
-import { type EntityRow } from "@datacanvas/core";
+import { type EntityRow } from "@data-canvas/core";
 
 export interface ClientListQuery {
   page?: number;

@@ -1,4 +1,4 @@
-import { type AnyEntity, type EntityRow } from "@datacanvas/core";
+import { type AnyEntity, type EntityRow } from "@data-canvas/core";
 import { useEffect, useState } from "react";
 import { ApiError } from "../client";
 import { useEntityList, useEntityMutations } from "../hooks";

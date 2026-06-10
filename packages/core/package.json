@@ -1,5 +1,5 @@
 {
-  "name": "@datacanvas/core",
+  "name": "@data-canvas/core",
   "version": "0.1.0",
   "description": "Entity metadata, field builders and validation for DataCanvas.",
   "license": "MIT",

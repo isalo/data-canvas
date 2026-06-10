@@ -1,4 +1,4 @@
-import { entity, field } from "@datacanvas/core";
+import { entity, field } from "@data-canvas/core";
 
 export const Country = entity("countries", {
   id: field.uuid().primary(),

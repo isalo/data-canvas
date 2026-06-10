@@ -62,14 +62,14 @@ modern primitives, with three rules:
 
 ```txt
         ┌─────────────────────────────────────────────────┐
-        │              @datacanvas/core                   │
+        │              @data-canvas/core                   │
         │  entity() · field builders · Zod validation     │
         │  metadata + DataAdapter contract (no runtime    │
         │  dependencies besides zod)                      │
         └──────────────┬──────────────────┬───────────────┘
                        │                  │
         ┌──────────────▼─────┐   ┌────────▼───────────────┐
-        │ @datacanvas/server │   │  @datacanvas/react     │
+        │ @data-canvas/server │   │  @data-canvas/react     │
         │ createDataCanvas() │   │  DataCanvasProvider    │
         │ CRUD Request →     │   │  EntityScreen / Grid / │
         │ Response handlers  │   │  Form / Lookup + hooks │
@@ -77,7 +77,7 @@ modern primitives, with three rules:
         └──────────────┬─────┘   └────────┬───────────────┘
                        │                  │ HTTP (JSON)
         ┌──────────────▼─────────┐        │
-        │ @datacanvas/adapter-   │◄───────┘
+        │ @data-canvas/adapter-   │◄───────┘
         │ drizzle                │
         │ entity → pgTable,      │
         │ Drizzle ORM queries    │
@@ -88,14 +88,14 @@ modern primitives, with three rules:
 
 ## Packages
 
-| Package                       | Description                                                        |
-| ----------------------------- | ------------------------------------------------------------------ |
-| `@datacanvas/core`            | Entity metadata, field builders, relations, Zod validation         |
-| `@datacanvas/server`          | CRUD API generation, request handling, in-memory adapter           |
-| `@datacanvas/react`           | `EntityScreen`, `EntityGrid`, `EntityForm`, `EntityLookup`, hooks  |
-| `@datacanvas/adapter-drizzle` | Drizzle ORM / PostgreSQL adapter                                   |
-| `apps/demo`                   | Next.js demo app (Countries, Customers, Orders with master/detail) |
-| `apps/docs`                   | Documentation website                                              |
+| Package                        | Description                                                        |
+| ------------------------------ | ------------------------------------------------------------------ |
+| `@data-canvas/core`            | Entity metadata, field builders, relations, Zod validation         |
+| `@data-canvas/server`          | CRUD API generation, request handling, in-memory adapter           |
+| `@data-canvas/react`           | `EntityScreen`, `EntityGrid`, `EntityForm`, `EntityLookup`, hooks  |
+| `@data-canvas/adapter-drizzle` | Drizzle ORM / PostgreSQL adapter                                   |
+| `apps/demo`                    | Next.js demo app (Countries, Customers, Orders with master/detail) |
+| `apps/docs`                    | Documentation website                                              |
 
 ## Quick start
 
@@ -104,7 +104,7 @@ modern primitives, with three rules:
 **1. Define entities** (shared between server and client):
 
 ```ts
-import { entity, field } from "@datacanvas/core";
+import { entity, field } from "@data-canvas/core";
 
 export const Country = entity("countries", {
   id: field.uuid().primary(),
@@ -115,8 +115,8 @@ export const Country = entity("countries", {
 **2. Create the server app:**
 
 ```ts
-import { createDataCanvas } from "@datacanvas/server";
-import { drizzleAdapter } from "@datacanvas/adapter-drizzle";
+import { createDataCanvas } from "@data-canvas/server";
+import { drizzleAdapter } from "@data-canvas/adapter-drizzle";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
@@ -140,8 +140,8 @@ export const DELETE = app.handlers.DELETE;
 **4. Render screens:**
 
 ```tsx
-import { DataCanvasProvider, EntityScreen } from "@datacanvas/react";
-import "@datacanvas/react/styles.css";
+import { DataCanvasProvider, EntityScreen } from "@data-canvas/react";
+import "@data-canvas/react/styles.css";
 
 <DataCanvasProvider baseUrl="/api/datacanvas">
   <EntityScreen entity={Customer} />

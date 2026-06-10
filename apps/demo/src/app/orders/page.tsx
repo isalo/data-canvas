@@ -1,7 +1,7 @@
 "use client";
 
-import { type EntityRow } from "@datacanvas/core";
-import { EntityScreen } from "@datacanvas/react";
+import { type EntityRow } from "@data-canvas/core";
+import { EntityScreen } from "@data-canvas/react";
 import { useState } from "react";
 import { Order, OrderItem } from "@/lib/entities";
 

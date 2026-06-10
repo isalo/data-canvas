@@ -1,4 +1,4 @@
-import { entity, field } from "@datacanvas/core";
+import { entity, field } from "@data-canvas/core";
 import { beforeEach, describe, expect, it } from "vitest";
 import { createDataCanvas, type DataCanvasApp } from "./app";
 import { createMemoryAdapter } from "./memory-adapter";

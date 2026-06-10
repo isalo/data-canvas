@@ -1,5 +1,5 @@
 {
-  "name": "@datacanvas/demo",
+  "name": "@data-canvas/demo",
   "version": "0.0.0",
   "private": true,
   "description": "DataCanvas demo application.",
@@ -11,10 +11,10 @@
     "e2e": "playwright test"
   },
   "dependencies": {
-    "@datacanvas/adapter-drizzle": "workspace:*",
-    "@datacanvas/core": "workspace:*",
-    "@datacanvas/react": "workspace:*",
-    "@datacanvas/server": "workspace:*",
+    "@data-canvas/adapter-drizzle": "workspace:*",
+    "@data-canvas/core": "workspace:*",
+    "@data-canvas/react": "workspace:*",
+    "@data-canvas/server": "workspace:*",
     "drizzle-orm": "^0.38.2",
     "next": "^15.1.0",
     "postgres": "^3.4.5",

@@ -1,4 +1,4 @@
-import { type EntityRow } from "@datacanvas/core";
+import { type EntityRow } from "@data-canvas/core";
 
 // Mirrors docker/init.sql so the in-memory fallback adapter shows the same
 // data as a fresh PostgreSQL container.

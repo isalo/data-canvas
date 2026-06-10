@@ -1,5 +1,5 @@
 {
-  "name": "@datacanvas/server",
+  "name": "@data-canvas/server",
   "version": "0.1.0",
   "description": "CRUD API generation and request handling for DataCanvas entities.",
   "license": "MIT",
@@ -29,7 +29,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@datacanvas/core": "workspace:*"
+    "@data-canvas/core": "workspace:*"
   },
   "devDependencies": {
     "tsup": "^8.3.5",

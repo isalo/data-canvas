@@ -6,7 +6,7 @@ export default function AdaptersPage() {
       <h1>Database adapters</h1>
       <p>
         The server never talks to a database directly. It only knows the <code>DataAdapter</code>{" "}
-        contract defined in <code>@datacanvas/core</code>:
+        contract defined in <code>@data-canvas/core</code>:
       </p>
       <CodeBlock>{`interface DataAdapter {
   list(entity, query): Promise<{ rows; total }>;
@@ -17,7 +17,7 @@ export default function AdaptersPage() {
 }`}</CodeBlock>
 
       <h2>Drizzle / PostgreSQL</h2>
-      <CodeBlock>{`import { drizzleAdapter } from "@datacanvas/adapter-drizzle";
+      <CodeBlock>{`import { drizzleAdapter } from "@data-canvas/adapter-drizzle";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
@@ -30,7 +30,7 @@ const adapter = drizzleAdapter(db);`}</CodeBlock>
       </p>
 
       <h2>In-memory</h2>
-      <CodeBlock>{`import { createMemoryAdapter } from "@datacanvas/server";
+      <CodeBlock>{`import { createMemoryAdapter } from "@data-canvas/server";
 
 const adapter = createMemoryAdapter({
   seed: { countries: [{ id: "...", name: "Japan", code: "JP" }] },

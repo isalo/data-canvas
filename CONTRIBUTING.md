@@ -53,7 +53,7 @@ pass before opening a pull request — CI runs the same commands.
 ## Changesets
 
 We use [Changesets](https://github.com/changesets/changesets) for versioning.
-If your change affects a published package (`@datacanvas/*`), run:
+If your change affects a published package (`@data-canvas/*`), run:
 
 ```bash
 pnpm changeset
@@ -68,7 +68,7 @@ When proposing changes, keep these in mind:
 
 - **Metadata-first** — entity metadata is the single source of truth.
 - **No magic that cannot be overridden** — every default needs an escape hatch.
-- **Headless core** — UI lives in `@datacanvas/react`; everything below it must work without React.
+- **Headless core** — UI lives in `@data-canvas/react`; everything below it must work without React.
 - **Minimal dependencies** — adding a dependency to a published package needs a good reason.
 - **Simple over clever** — this codebase should be easy to read end to end.
 

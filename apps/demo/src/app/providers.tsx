@@ -1,6 +1,6 @@
 "use client";
 
-import { DataCanvasProvider } from "@datacanvas/react";
+import { DataCanvasProvider } from "@data-canvas/react";
 import { type ReactNode } from "react";
 
 export function Providers({ children }: { children: ReactNode }) {

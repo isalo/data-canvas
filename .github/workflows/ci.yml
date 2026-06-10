@@ -68,7 +68,7 @@ jobs:
         run: pnpm build --filter "./packages/*" --filter "./packages/adapters/*"
 
       - name: Install Playwright browsers
-        run: pnpm --filter @datacanvas/demo exec playwright install --with-deps chromium
+        run: pnpm --filter @data-canvas/demo exec playwright install --with-deps chromium
 
       - name: Run e2e tests
-        run: pnpm --filter @datacanvas/demo e2e
+        run: pnpm --filter @data-canvas/demo e2e

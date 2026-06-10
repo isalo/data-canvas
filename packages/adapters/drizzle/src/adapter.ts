@@ -4,7 +4,7 @@ import {
   type DataAdapter,
   type EntityRow,
   type FieldMeta,
-} from "@datacanvas/core";
+} from "@data-canvas/core";
 import { and, asc, count, desc, eq, ilike, or, type SQL } from "drizzle-orm";
 import { type PgColumn, type PgDatabase } from "drizzle-orm/pg-core";
 import { entityToTable, type GeneratedTable } from "./table";

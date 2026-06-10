@@ -1,4 +1,4 @@
-import { type AnyEntity, type ListQuery } from "@datacanvas/core";
+import { type AnyEntity, type ListQuery } from "@data-canvas/core";
 
 export const MAX_PAGE_SIZE = 100;
 export const DEFAULT_PAGE_SIZE = 20;

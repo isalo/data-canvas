@@ -1,4 +1,4 @@
-import { type FieldMeta } from "@datacanvas/core";
+import { type FieldMeta } from "@data-canvas/core";
 import { useLookupOptions } from "../hooks";
 
 function LookupCell({ field, value }: { field: FieldMeta; value: string }) {

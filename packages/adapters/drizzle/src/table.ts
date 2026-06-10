@@ -1,4 +1,4 @@
-import { camelToSnake, type AnyEntity, type FieldMeta } from "@datacanvas/core";
+import { camelToSnake, type AnyEntity, type FieldMeta } from "@data-canvas/core";
 import {
   boolean,
   date,

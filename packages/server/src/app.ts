@@ -1,4 +1,4 @@
-import { type AnyEntity, type DataAdapter, type EntityRow } from "@datacanvas/core";
+import { type AnyEntity, type DataAdapter, type EntityRow } from "@data-canvas/core";
 import { errorResponse, json } from "./http";
 import { parseListQuery } from "./query";
 

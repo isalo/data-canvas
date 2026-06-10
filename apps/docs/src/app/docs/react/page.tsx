@@ -5,7 +5,7 @@ export default function ReactPage() {
     <>
       <h1>React components</h1>
       <p>
-        <code>@datacanvas/react</code> is layered: data hooks at the bottom, presentational
+        <code>@data-canvas/react</code> is layered: data hooks at the bottom, presentational
         components in the middle, and the batteries-included <code>EntityScreen</code> on top. Use
         the highest layer that fits — and drop down when you need custom UI.
       </p>
@@ -93,8 +93,8 @@ const { create, update, remove } = useEntityMutations(Customer);
 
       <h2>Styling</h2>
       <p>
-        Import <code>@datacanvas/react/styles.css</code> for the default theme. Everything is scoped
-        to <code>dc-*</code> classes and driven by CSS variables (<code>--dc-accent</code>,{" "}
+        Import <code>@data-canvas/react/styles.css</code> for the default theme. Everything is
+        scoped to <code>dc-*</code> classes and driven by CSS variables (<code>--dc-accent</code>,{" "}
         <code>--dc-border</code>, …), so you can re-theme with a few overrides or replace the
         stylesheet entirely.
       </p>

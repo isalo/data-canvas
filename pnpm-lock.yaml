@@ -35,16 +35,16 @@ importers:
 
   apps/demo:
     dependencies:
-      '@datacanvas/adapter-drizzle':
+      '@data-canvas/adapter-drizzle':
         specifier: workspace:*
         version: link:../../packages/adapters/drizzle
-      '@datacanvas/core':
+      '@data-canvas/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@datacanvas/react':
+      '@data-canvas/react':
         specifier: workspace:*
         version: link:../../packages/react
-      '@datacanvas/server':
+      '@data-canvas/server':
         specifier: workspace:*
         version: link:../../packages/server
       drizzle-orm:
@@ -106,7 +106,7 @@ importers:
 
   packages/adapters/drizzle:
     dependencies:
-      '@datacanvas/core':
+      '@data-canvas/core':
         specifier: workspace:*
         version: link:../../core
     devDependencies:
@@ -138,7 +138,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@datacanvas/core':
+      '@data-canvas/core':
         specifier: workspace:*
         version: link:../core
       '@tanstack/react-query':
@@ -169,7 +169,7 @@ importers:
 
   packages/server:
     dependencies:
-      '@datacanvas/core':
+      '@data-canvas/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:

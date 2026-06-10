@@ -10,7 +10,7 @@ export default function GettingStartedPage() {
       </p>
 
       <h2>1. Define entities</h2>
-      <CodeBlock>{`import { entity, field } from "@datacanvas/core";
+      <CodeBlock>{`import { entity, field } from "@data-canvas/core";
 
 export const Country = entity("countries", {
   id: field.uuid().primary(),
@@ -25,8 +25,8 @@ export const Customer = entity("customers", {
 });`}</CodeBlock>
 
       <h2>2. Create the server app</h2>
-      <CodeBlock>{`import { createDataCanvas } from "@datacanvas/server";
-import { drizzleAdapter } from "@datacanvas/adapter-drizzle";
+      <CodeBlock>{`import { createDataCanvas } from "@data-canvas/server";
+import { drizzleAdapter } from "@data-canvas/adapter-drizzle";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
@@ -50,8 +50,8 @@ export const DELETE = app.handlers.DELETE;`}</CodeBlock>
 
       <h2>4. Render screens</h2>
       <CodeBlock>{`"use client";
-import { DataCanvasProvider, EntityScreen } from "@datacanvas/react";
-import "@datacanvas/react/styles.css";
+import { DataCanvasProvider, EntityScreen } from "@data-canvas/react";
+import "@data-canvas/react/styles.css";
 
 export default function CustomersPage() {
   return (
@@ -68,10 +68,10 @@ export default function CustomersPage() {
 
       <h2>Running without PostgreSQL</h2>
       <p>
-        For tests and demos, <code>@datacanvas/server</code> ships an in-memory adapter with the
+        For tests and demos, <code>@data-canvas/server</code> ships an in-memory adapter with the
         same contract:
       </p>
-      <CodeBlock>{`import { createMemoryAdapter } from "@datacanvas/server";
+      <CodeBlock>{`import { createMemoryAdapter } from "@data-canvas/server";
 
 const app = createDataCanvas({
   entities: [Country, Customer],

@@ -1,4 +1,4 @@
-import { type AnyEntity, type EntityRow, type FieldMeta } from "@datacanvas/core";
+import { type AnyEntity, type EntityRow, type FieldMeta } from "@data-canvas/core";
 import { useState, type FormEvent } from "react";
 import { type ZodIssueLike } from "../client";
 import { EntityLookup } from "./EntityLookup";

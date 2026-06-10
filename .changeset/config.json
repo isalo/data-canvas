@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@datacanvas/demo", "@datacanvas/docs"]
+  "ignore": ["@data-canvas/demo", "@data-canvas/docs"]
 }

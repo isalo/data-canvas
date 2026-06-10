@@ -1,5 +1,5 @@
 {
-  "name": "@datacanvas/react",
+  "name": "@data-canvas/react",
   "version": "0.1.0",
   "description": "EntityScreen, EntityGrid, EntityForm and EntityLookup components for DataCanvas.",
   "license": "MIT",
@@ -32,7 +32,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@datacanvas/core": "workspace:*",
+    "@data-canvas/core": "workspace:*",
     "@tanstack/react-query": "^5.62.7",
     "@tanstack/react-table": "^8.20.5"
   },

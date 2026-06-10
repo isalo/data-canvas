@@ -1,4 +1,4 @@
-import { type AnyEntity, type EntityRow, type FieldMeta } from "@datacanvas/core";
+import { type AnyEntity, type EntityRow, type FieldMeta } from "@data-canvas/core";
 import { keepPreviousData, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { type ClientListQuery } from "./client";
 import { useDataCanvas } from "./context";

@@ -1,9 +1,9 @@
 {
-  "name": "datacanvas",
+  "name": "data-canvas",
   "private": true,
-  "description": "Delphi-style data components for modern TypeScript web apps.",
+  "description": "Data Canvas - modern data components.",
   "license": "MIT",
-  "author": "isalo",
+  "author": "Ivan Salo",
   "repository": {
     "type": "git",
     "url": "https://github.com/isalo/data-canvas"

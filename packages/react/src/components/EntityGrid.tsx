@@ -1,4 +1,4 @@
-import { type AnyEntity, type EntityRow, type FieldMeta } from "@datacanvas/core";
+import { type AnyEntity, type EntityRow, type FieldMeta } from "@data-canvas/core";
 import { flexRender, getCoreRowModel, useReactTable, type ColumnDef } from "@tanstack/react-table";
 import { useMemo } from "react";
 import { CellValue } from "./CellValue";
